@@ -4,8 +4,8 @@
 <title>Hello, World! Page</title>
 </head>
 <body>
-<?php
-	echo '   ssdfsdf Hello, World to test --context-dir=network-test';
+<?php 
+    echo "<script>location.href='hello.php';</script>";
 ?>
 </body>
 </html>
