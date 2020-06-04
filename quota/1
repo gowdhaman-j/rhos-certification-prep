@@ -1,0 +1,36 @@
+# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  creationTimestamp: 2019-08-01T11:09:21Z
+  name: core-object-counts-quota
+  namespace: resources2
+  resourceVersion: "415949"
+  selfLink: /api/v1/namespaces/resources2/resourcequotas/core-object-counts-quota
+  uid: cff48689-b44c-11e9-a1ac-00000a29024a
+spec:
+  hard:
+    configmaps: "2"
+    cpu: 1000m
+    persistentvolumeclaims: "1"
+    replicationcontrollers: "2"
+    secrets: "10"
+    services: "1"
+status:
+  hard:
+    configmaps: "2"
+    cpu: 900m
+    persistentvolumeclaims: "1"
+    replicationcontrollers: "2"
+    secrets: "10"
+    services: "1"
+  used:
+    configmaps: "0"
+    cpu: 800m
+    persistentvolumeclaims: "0"
+    replicationcontrollers: "1"
+    secrets: "9"
+    services: "1"
